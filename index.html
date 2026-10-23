@@ -4,141 +4,65 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Arthur.dev | Web and FiveM developer</title>
-  <meta name="description" content="FiveM NUI interfaces, secure server scripts and application portals for roleplay servers. Based in Riga, Latvia." />
-  <meta name="theme-color" content="#07060b" />
-  <meta property="og:title" content="Arthur.dev | Web and FiveM developer" />
-  <meta property="og:description" content="FiveM NUI interfaces, secure server scripts and application portals for roleplay servers." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <meta name="description" content="I build interfaces and tools for FiveM roleplay servers: React windows, secure server scripts and application portals. Based in Riga, Latvia." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="scene" aria-hidden="true"><span class="orb a"></span><span class="orb b"></span><span class="orb c"></span></div>
-
-  <header class="nav glass">
-    <a class="brand" href="#top"><span class="mark display">A</span><span class="display name">Arthur.dev</span></a>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#work">Work</a>
-      <a href="#process">Process</a>
-      <a class="btn small" href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Arthur.dev</a>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="work.html">Work</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="top">
+  <main class="wrap">
     <section class="hero">
-      <p class="eyebrow">Web and FiveM developer</p>
-      <h1 class="display">Interfaces and server logic<br /><span class="accent">built to be trusted</span></h1>
-      <div class="tape"></div>
+      <h1>I build interfaces and tools for FiveM servers.</h1>
       <p class="lead">
-        I build React interfaces, secure server scripts and application portals for roleplay servers.
-        Clean design on the screen, and every important decision made on the server.
+        I am a web and FiveM developer based in Riga, Latvia. I make clean windows in React, server scripts
+        that handle money and items safely, and application portals for roleplay communities.
       </p>
-      <div class="cta">
-        <a class="btn primary" href="#work">See my work</a>
-        <a class="btn ghost" href="#contact">Talk to me</a>
-      </div>
-      <ul class="stack" aria-label="Technologies">
-        <li>React</li><li>TypeScript</li><li>Next.js</li><li>Lua</li><li>MariaDB</li><li>Qbox</li><li>ESX</li>
-      </ul>
-    </section>
-
-    <section id="services" class="section">
-      <h2 class="display">What I do</h2>
-      <div class="tape short"></div>
-      <div class="grid three">
-        <article class="glass card">
-          <span class="num display">01</span>
-          <h3>FiveM interfaces (NUI)</h3>
-          <p>Banking, garages, HUDs, menus. Fast React windows that match your server and stay light in game.</p>
-        </article>
-        <article class="glass card">
-          <span class="num display">02</span>
-          <h3>Secure server scripts</h3>
-          <p>Money, items and vehicles are decided by the server. Limits, distance checks, rate limits and a clean transaction log.</p>
-        </article>
-        <article class="glass card">
-          <span class="num display">03</span>
-          <h3>Application portals</h3>
-          <p>Discord login, a form per department, a staff panel and automatic roles. Your name, your colors, your domain.</p>
-        </article>
+      <div class="buttons">
+        <a class="button" href="work.html">See my work</a>
+        <a class="button secondary" href="contact.html">Get in touch</a>
       </div>
     </section>
 
-    <section id="work" class="section">
-      <h2 class="display">Selected work</h2>
-      <div class="tape short"></div>
-      <div class="grid two">
-        <article class="glass project">
-          <img src="img/portal.jpg" alt="Staff panel of the application portal with a simulated Discord message" loading="lazy" />
-          <div class="body">
-            <h3>Application portal</h3>
-            <p>Players apply to departments, staff review in one panel, roles are granted on approval and a bot message is shown in a preview. Next.js and TypeScript. The demo runs entirely in your browser.</p>
-            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Tailwind</li></ul>
-            <a class="link" href="https://application-portal-iota.vercel.app/" target="_blank" rel="noopener">Open the live demo</a>
-          </div>
-        </article>
+    <h2>Recent work</h2>
+    <div class="items three">
+      <a class="card-link" href="work.html#portal">
+        <img src="img/portal.jpg" alt="Staff panel of the application portal" loading="lazy" />
+        <h3>Application portal</h3>
+        <p>Players apply, staff review and roles are given automatically.</p>
+      </a>
+      <a class="card-link" href="work.html#bank">
+        <img src="img/bank.png" alt="ATM window with balances and history" loading="lazy" />
+        <h3>ATM and banking</h3>
+        <p>A bank window where the server decides every money operation.</p>
+      </a>
+      <a class="card-link" href="work.html#garage">
+        <img src="img/garage.jpg" alt="Vehicle garage window in game" loading="lazy" />
+        <h3>Vehicle garage</h3>
+        <p>Pick a vehicle, keep favorites, spawn it safely.</p>
+      </a>
+    </div>
 
-        <article class="glass project">
-          <img src="img/bank.png" alt="ATM window with balances, deposit, withdraw, transfer and history" loading="lazy" />
-          <div class="body">
-            <h3>bank-nui</h3>
-            <p>ATM and banking window. All money rules live on the server: balance checks before every withdrawal, sessions tied to the ATM, rate limits, rollback on failure and a transaction log.</p>
-            <ul class="tags"><li>React</li><li>Lua</li><li>oxmysql</li><li>Qbox</li><li>ESX bridge</li></ul>
-            <a class="link" href="https://github.com/arturBuls-dev/bank-nui" target="_blank" rel="noopener">View on GitHub</a>
-          </div>
-        </article>
-
-        <article class="glass project">
-          <img src="img/garage.jpg" alt="Vehicle garage window in game with favorites" loading="lazy" />
-          <div class="body">
-            <h3>garage-nui</h3>
-            <p>Vehicle garage with favorites saved in the database. The server spawns the vehicle, hands out the keys and seats the player. Framework bridge for Qbox, ESX and QBCore.</p>
-            <ul class="tags"><li>React</li><li>Lua</li><li>MariaDB</li><li>Bridge</li></ul>
-            <a class="link" href="https://github.com/arturBuls-dev/garage-nui" target="_blank" rel="noopener">View on GitHub</a>
-          </div>
-        </article>
-
-        <article class="glass project">
-          <img src="img/hud.jpg" alt="Custom HUD with a gauge speedometer and status rings in game" loading="lazy" />
-          <div class="body">
-            <h3>custom-hud</h3>
-            <p>HUD with status rings, a gauge speedometer and context hints that teach new players the controls: seatbelt, locked vehicle, voice. Updates only when values change.</p>
-            <ul class="tags"><li>React</li><li>Lua</li><li>Qbox</li></ul>
-            <a class="link" href="https://github.com/arturBuls-dev/custom-hud" target="_blank" rel="noopener">View on GitHub</a>
-          </div>
-        </article>
-      </div>
-      <p class="note">Qbox is the framework everything is tested on. ESX and QBCore bridges are written and ready to be tested on your server.</p>
-    </section>
-
-    <section id="process" class="section">
-      <h2 class="display">How we work</h2>
-      <div class="tape short"></div>
-      <ol class="grid three steps">
-        <li class="glass card"><span class="num display">1</span><h3>Tell me what you need</h3><p>A short message is enough. I will ask a few questions about your framework and what already works.</p></li>
-        <li class="glass card"><span class="num display">2</span><h3>Fixed price and scope</h3><p>After a quick look I send one price and a written scope. No surprises, no open ended hours.</p></li>
-        <li class="glass card"><span class="num display">3</span><h3>Built and tested</h3><p>I build it, test it on a Qbox server and send you clear install notes. Changes after delivery are included in the scope.</p></li>
-      </ol>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="glass box">
-        <h2 class="display">Let us talk</h2>
-        <div class="tape short"></div>
-        <p>Have a server that needs an interface, a script or an application portal? Write to me, I usually answer within a day.</p>
-        <div class="cta">
-          <span class="btn primary">Discord: <b>arturs.dev</b></span>
-          <a class="btn ghost" href="https://github.com/arturBuls-dev" target="_blank" rel="noopener">GitHub: arturBuls-dev</a>
-        </div>
-        <p class="small">Based in Riga, Latvia. I speak English, Russian and Latvian.</p>
-      </div>
-    </section>
+    <h2>What I can help with</h2>
+    <p class="muted">
+      Interfaces for your server, scripts that are safe to run, and a proper way to take applications.
+      You can read the details on the <a href="services.html">services page</a>.
+    </p>
   </main>
 
   <footer>
-    <p>Arthur.dev. All rights reserved. Not affiliated with Rockstar Games, Cfx.re or any server shown. Game images are screenshots of my own resources running on a private test server.</p>
+    <div class="wrap">
+      <p>&copy; 2026 Arthur.dev. Not affiliated with Rockstar Games, Cfx.re or any server shown on this site.</p>
+    </div>
   </footer>
 </body>
 </html>

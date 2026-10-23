@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work | Arthur.dev</title>
+  <meta name="description" content="Selected projects: an application portal, an ATM and banking window, a vehicle garage and a custom HUD for FiveM." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Arthur.dev</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html" aria-current="page">Work</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Selected work</h1>
+      <p class="lead">Four projects I built and tested. The code of the three FiveM resources is public on GitHub.</p>
+    </section>
+
+    <article class="project" id="portal">
+      <img src="img/portal.jpg" alt="Staff panel with a simulated Discord message" loading="lazy" />
+      <h2>Application portal</h2>
+      <p>
+        A website where players sign in with Discord and apply to a department. Staff review everything in one panel,
+        leave a note and approve or deny with one click. When someone is approved, the Discord role is given
+        automatically.
+      </p>
+      <ul class="muted">
+        <li>A form for each department with its own questions</li>
+        <li>A personal page where players see the status of their application</li>
+        <li>Filters and search for staff, with a full history of every application</li>
+      </ul>
+      <p class="meta">Next.js, TypeScript, Tailwind. The demo works fully in your browser.</p>
+      <div class="links"><a href="https://application-portal-iota.vercel.app/" target="_blank" rel="noopener">Open the live demo</a></div>
+    </article>
+
+    <article class="project" id="bank">
+      <img src="img/bank.png" alt="ATM window with balances, deposit, withdraw, transfer and history" loading="lazy" />
+      <h2>ATM and banking (bank-nui)</h2>
+      <p>
+        A bank window that opens at ATMs. Players can deposit, withdraw and send money, and see their recent activity.
+        Every operation is checked on the server, so the window cannot be used to cheat.
+      </p>
+      <ul class="muted">
+        <li>Balance is checked before every withdrawal and transfer</li>
+        <li>The player has to stay near the ATM, and sessions expire</li>
+        <li>Failed transfers are rolled back and every operation is logged</li>
+      </ul>
+      <p class="meta">React, Lua, oxmysql. Tested on Qbox, ESX bridge included.</p>
+      <div class="links"><a href="https://github.com/arturBuls-dev/bank-nui" target="_blank" rel="noopener">View on GitHub</a></div>
+    </article>
+
+    <article class="project" id="garage">
+      <img src="img/garage.jpg" alt="Vehicle garage window in game" loading="lazy" />
+      <h2>Vehicle garage (garage-nui)</h2>
+      <p>
+        A garage window with cards for each vehicle. Players mark favorites that are saved in the database. The server
+        spawns the vehicle, gives the keys and seats the player.
+      </p>
+      <ul class="muted">
+        <li>Whitelist of models, permission check and a cooldown on the server</li>
+        <li>Favorites saved per character</li>
+        <li>One framework bridge for Qbox, ESX and QBCore</li>
+      </ul>
+      <p class="meta">React, Lua, MariaDB. Tested on Qbox, the other bridges are ready for testing.</p>
+      <div class="links"><a href="https://github.com/arturBuls-dev/garage-nui" target="_blank" rel="noopener">View on GitHub</a></div>
+    </article>
+
+    <article class="project" id="hud">
+      <img src="img/hud.jpg" alt="Custom HUD with a speedometer and status rings in game" loading="lazy" />
+      <h2>HUD (custom-hud)</h2>
+      <p>
+        A HUD with status rings, a round speedometer and short hints that teach new players the controls, such as the
+        seatbelt, locked vehicles and voice chat.
+      </p>
+      <ul class="muted">
+        <li>Updates only when a value changes, so it stays light</li>
+        <li>Hints appear at the right moment and go away once learned</li>
+        <li>A small key reference panel that players can hide</li>
+      </ul>
+      <p class="meta">React, Lua. Tested on Qbox.</p>
+      <div class="links"><a href="https://github.com/arturBuls-dev/custom-hud" target="_blank" rel="noopener">View on GitHub</a></div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Arthur.dev. Game images are screenshots of my own resources running on a private test server.</p>
+    </div>
+  </footer>
+</body>
+</html>
